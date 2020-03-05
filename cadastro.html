@@ -32,7 +32,7 @@
     <div class="titulo_pagina">
         <h1>Cadastro de Jogador</h1>
     </div>
-    <form action="" method="post">
+    <form action="" method="post" class="form_cadastro">
         <div class="campo">
             <label for="nome">Nome Do Jogador</label>
             <input type="text" name="nomedojogador" id="nome">
@@ -55,7 +55,7 @@
         </div>
         <div class="campo">
             <label for="nascimento">Nascimento</label>
-            <input type="date" name="nascimento" id="nascimento">
+            <input type="date" name="nascimento" id="nascimento" max="2020-03-05" min="1900-01-01">
         </div>
         <div class="campo">
             <label for="pais">País</label>
@@ -75,14 +75,16 @@
             <label for="Feminino">Feminino</label>
             <input type="radio" name="sexo" value="Outro" id="Outro">
             <label for="Outro">Outro</label>
+            <input type="radio" name="sexo" value="Prefiro não Dizer" id="NãoDizer">
+            <label for="Prefiro não dizer">Prefiro Não Dizer</label>
         </fieldset>
-        <div class="campo">
+        <div class="campo termos">
             <input type="checkbox" name="check" id="check">
             <label for="check">
                 Declaro que li e aceito os termos de uso deste site.
             </label>
         </div>
-        <button type="submit">Cadastrar</button>
+        <button type="submit" class="btn gradient">Cadastrar</button>
     </form>
 
 </main>
