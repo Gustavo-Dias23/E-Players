@@ -14,16 +14,21 @@
 
     <header>
         <div class="container cabecalho">
-            <a href="index.html">
-                <img src="imagens/Imagens/Logo.svg" alt="Logo do site E-Players">
-            </a>
-            <nav>
+            <div>
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="index.html">
+                    <img src="imagens/Imagens/Logo.svg" alt="Logo do site E-Players">
+                </a>
+            </div>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html" title="Voltar para a página inicial.">INÍCIO</a></li>
                     <li><a href="#horarios" title="Ir até a sessão de horários das partidas.">HORÁRIOS</a></li>
                     <li><a href="#resultados" title="Ir até a sessão de resultados das partidas.">RESULTADOS</a></li>
                     <li><a href="#noticias" title="Ir até a sessão de notícias.">NOTÍCIAS</a></li>
-                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#" title="Buscar conteúdo no site"><i class="fas fa-search"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -298,7 +303,16 @@
         </div>
         <p>© Copyright 2077 SENAI Electronics Sports - Todos os direitos reservados. </p>
     </footer>
-
+    <script>
+        function botaoMenu() {
+            var m = document.getElementById("menu");
+            if(m.style.display == "block") {
+                m.style.display = "none";
+            }else{
+                m.style.display = "block"
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -309,6 +309,11 @@ fieldset label{
     margin-top: 2em;
     cursor: pointer;
 }
+.cabecalho .fa-bars{
+    color: var(--purple);
+    font-size:2em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    display:none;   
+}
 @media screen and (max-width: 1200px){
     .campea{
         right: 0%;
@@ -362,13 +367,8 @@ fieldset label{
         width:30%;
     }
     footer .container{
-    padding-top: 0.3em;
-    width:94%
-    }
-    footer .container div:nth-child(2){
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
+        padding-top: 0.3em;
+        width:94%
     }
     .mob_logo_sociais{
         display: flex;
@@ -378,7 +378,35 @@ fieldset label{
     .mob_logo_sociais img{
         max-width: 180px;
     }
-    .sociais{
-        padding-top:0.5em 0;
+}
+@media screen and (max-width: 460px){
+    .cabecalho .fa-bars{
+        display:block;
+    }
+    .cabecalho div{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        padding: 0 2em;
+    }
+    #menu{
+        position:absolute;
+        top: 72px;
+        background-color: #1E1C21;
+        width: 100%;
+        display: none;
+    }
+    .cabecalho ul{
+        flex-direction: column;
+        height:250px;
+    }
+    .cabecalho ul a{
+        margin-left: 2em;
+        padding: 0.5em 80% 0.5em 0.5em;
+        margin:0.1em 0;
+    }
+    .campea{
+        display:none;
     }
 }
